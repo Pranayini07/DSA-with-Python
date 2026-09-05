@@ -1,0 +1,12 @@
+numbers = [10, 20, 4, 45, 99]
+
+largest = second_largest = float('-inf')
+
+for num in numbers:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif largest > num > second_largest:
+        second_largest = num
+
+print("Second largest number:", second_largest)
